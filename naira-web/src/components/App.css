@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap');
+
+body {
+  /* background-image: url('../public/img/image1.png'); */
+  background-repeat: no-repeat;
+  font-family: 'Roboto Mono', monospace;
+  background-color: white;
+
+ 
+  
+}
+.App{
+  display: flex;
+  overflow: hidden;
+  padding-top: 3%;
+
+}
+.left{
+   flex: 1;
+   color: rgb(4, 4, 4);
+   justify-content: center;
+   
+   padding-left: 8em;
+   display: flex;
+   flex-direction: column;
+}
+.left h1{
+  width: 600px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height:1em;
+  font-weight: 800;
+  margin: 0;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  
+  
+
+}
+.left h2{
+  font-weight: 200;
+  font-size: 15px;
+  
+  
+
+}
+.left p{
+  font-weight: 200;
+  width: 600px;
+  font-size: 15px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.right{
+  flex: 1;
+}
+.btn{
+  cursor: pointer;
+  padding: 18px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  margin-top: 20px;
+  border: 0.8px solid rgb(115, 113, 113);
+  border-radius: 5px;
+  background-color: #33832A;
+  color: white;
+  box-shadow: 1px 1px 7px black;
+
+
+}
+.btn:hover{
+border:2px solid #33832A;
+scale: 0.97;
+opacity: 0.9;
+
+}
+.side-img{
+  overflow: hidden;
+  width: 50em;
+  height: auto;
+  animation: move 4s infinite;
+}
+@keyframes move{
+       
+        25%{
+            transform: translateY(-50px);
+        }
+        /* 50%{
+            transform: translateY(-100px);
+        }
+        75%{
+            transform: translateY(-150px);
+        }
+        100%{
+            transform: translateY(-50px);
+        } */
+  
+  
+}
+.logo b{
+  color: #33832A;
+}
+.btn-connect{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+    width: 150px;
+    height: 50%;
+    border: 0.8px solid rgb(115, 113, 113);
+    border-radius: 5px;
+    margin-left: 20px;
+    
+  
+}
+header{
+  display: flex;
+  justify-content:space-between;
+  padding-right: 30px;
+  margin-top: 20px;
+  padding-left: 3em;
+}
+.logo{
+  display: flex;
+  font-size: 20px;
+  font-family:  'Poppins', sans-serif;
+  cursor: pointer;
+
+}
+.logo h2{
+  padding-right: 3em;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.li{
+  margin-right: 3em;
+  cursor: pointer;
+  padding: 0.8em 3em;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgb(216, 213, 213);
+}
+.li:hover{
+  scale: 0.97;
+  opacity: 0.7;
+}
+.home{
+  border: 0.8px solid rgb(115, 113, 113);
+
+
+}
+.le{
+  padding: 0.8em 2em;
+
+}
+.li:hover{
+  color: #33832A;
+  border: 0.8px solid rgb(115, 113, 113);
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7em;
+}
+.text{
+  color: #33832A;
+}
+.address{
+  font-size: 10px;
+  background-color: transparent;
+  color: #33832A;
+  width: 90px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+.popup{
+  
+  color: black;
+  width: 400px;
+  height: 340px;
+  border-radius: 5px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 2;
+  background: white;
+
+  box-shadow: 2px 3px 11px black;
+  animation: movve 0.3s ease-in ;
+}
+@keyframes movve{
+       
+        0%{
+           opacity: 0;
+               
+            };
+          50%{
+            opacity: 1;
+          };
+          100%{
+            opacity: 1;
+            
+          }
+       
+  
+}
+.background{
+  background-color: #33832A;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  left: 0;
+  opacity: 0.4;
+
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup input{
+  margin-bottom: 50px;
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 15px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid rgb(126, 124, 124);
+  
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.popup h2{
+  padding-top: 20px;
+}
+
+.mint{
+  width: 100%;
+  cursor: pointer;
+ 
+}
+.closeButton {
+margin-bottom: 20px;
+
+
+}
+.line{
+  width:70px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #23441e;
+  opacity: 0.1;
+  rotate: 0deg;
+  visibility: hidden;
+  
+}
+.lins{
+  margin-left: 7em;
+
+}
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.sign h4{
+    font-size: 13px;
+    cursor: pointer;
+}
+.color{
+  padding: 0.9em 2em;
+  background-color: #33832A;
+  border-radius: 3px;
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 1px 5px rgb(69, 68, 68);
+  
+
+
+
+}
+.color{
+  padding: 0.9em 2em;
+}
+.color:hover{
+  scale: 0.97;
+opacity: 0.9;
+
+
+}
+
+.col:hover{
+  scale: 0.97;
+  opacity: 0.7;
+
+}
+.link{
+  text-decoration: none;
+  color: black;
+
+
+}
+

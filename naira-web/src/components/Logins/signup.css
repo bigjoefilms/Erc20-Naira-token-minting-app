@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+
+}
+.rigt{
+    
+    padding: 10px 20px;
+    width: 450px;
+    background-color: white;
+    text-align: start;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(110, 109, 109);
+
+
+    
+}
+.check{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 14%;
+    position: absolute;
+    width: 450px;
+    padding: 5px 20px;
+    background-color:#c4eabf ;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(110, 109, 109);
+    
+}
+.pass{
+    margin-top: 20px;
+}
+
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+
+.int{
+    margin-bottom: 30px;
+}
+.head{
+    text-decoration: none;
+    color: black;
+}
+.foote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    margin-bottom: 7em;
+    
+    
+  }
+
+.input-container input{
+    height: 40px;
+    border: 1px solid #E1E6EE;
+    border-radius: 10px; 
+    margin-top: 10px;
+    font-size: 17px;
+    width: 90%;
+    margin-right: 50px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.input-container p b{
+    color:#23441e ;
+
+}
+.input-container p {
+    margin: 7px;
+}
+.check b{
+color:#23441e ;
+}
+.btn-t{
+    cursor: pointer;
+    padding: 18px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    background-color: #33832A;
+    color: white;
+    margin-bottom: 10px;
+}
+.btn-t:hover{
+    opacity: 0.8;
+
+}
